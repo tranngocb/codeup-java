@@ -1,3 +1,4 @@
+import java.io.PrintStream;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -8,6 +9,7 @@ public class HightLowGuess {
     public static void main(String[] args) {
         // statistic of user number guesses
         int userGuess = 0;
+        int userLimitGuess = 3;
         //Game pick a random number between 1 anf 100
 
         Scanner input = new Scanner(System.in);
@@ -26,7 +28,7 @@ public class HightLowGuess {
             // Guesses a user makes
             userGuess++;
             // Set upper limit on the number of guesses
-            if (userGuess > 2)
+            if (userGuess > userLimitGuess)
             {
                 System.out.println("You have reach a limit of guess! Game End");
             break;
