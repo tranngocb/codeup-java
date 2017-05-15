@@ -15,5 +15,9 @@ public class StringExercise {
        //System.out.println(message.replace("education","thought control"));
         //System.out.println("and the amazing triple backslash \\\\\\!");
         System.out.println(message);
+
+       // message = "123".toUpperCase();
+        message = "BOB123".toLowerCase();
+        System.out.println(message);
     }
 }
